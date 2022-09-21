@@ -96,6 +96,22 @@ public class FirstFragment extends Fragment {
                 poissonP2--;
             updateCounters();
         });
+
+        binding.btnLifeFromP1toP2.setOnClickListener(btn -> {
+            if (lifeP1 > 0){
+                lifeP1--;
+                lifeP2++;
+            }
+            updateCounters();
+        });
+
+        binding.btnLifeFromP2toP1.setOnClickListener(btn -> {
+            if (lifeP2 > 0) {
+                lifeP2--;
+                lifeP1++;
+            }
+            updateCounters();
+        });
     }
 
     @Override
