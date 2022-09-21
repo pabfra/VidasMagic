@@ -7,10 +7,18 @@
     tools:context=".FirstFragment">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPoissonPlusP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="P+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPoissonPlusP1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
